@@ -1,0 +1,41 @@
+.logo-error {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+}
+
+.icon-error {
+  max-width: 8rem;
+  width: 100%;
+  height: auto;
+}
+
+.box-text-error {
+  background-color: #f6f6f6;
+  border: 1px solid #dbd9d9;
+  border-radius: 5px;
+}
+
+.table-map {
+  td {
+    padding: 10px 10px;
+    border: 5px solid #fff;
+    @include media-max($M){
+      padding: 5px 5px;
+    }
+  }
+
+  td:nth-child(1) {
+    background-color: #d0ebfd;
+
+  }
+
+  td:nth-child(2) {
+    background-color: #eaeaea;
+  }
+}
+
+.map-box-style {
+  max-width: 100%;
+  height: calc(90vh - 200px);
+}

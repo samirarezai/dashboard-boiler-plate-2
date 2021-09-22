@@ -1,0 +1,44 @@
+
+html {
+  font-size: 14px !important;
+  @include media-max($M){
+    font-size: 12px !important;
+
+  }
+}
+body{
+    font-family: Roboto_light;
+    text-align: left;
+  margin: 0;
+  overflow-x: hidden;
+  background-color:#F3F3F3;
+  }
+  p{
+    margin-bottom: 0;
+  }
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  label{
+    color: #6b6b6b;
+    //font-family: Roboto;
+    font-weight: 500;
+  }
+  button{
+    &:focus{
+      outline: 0;
+    }
+  }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

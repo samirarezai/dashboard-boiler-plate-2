@@ -1,0 +1,69 @@
+.box-404 {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #dbecfe, #ddecfb, #deebf8, #e0ebf5, #e2eaf2);
+  position: relative;
+.text-404{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #286ea7;
+  font-weight: bold;
+  font-size: 1.5rem;
+  @media screen and (max-width: $M){
+    font-size: 1rem;
+  }
+  .shape-404{
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    max-width: 30px;
+  }
+}
+.sun{
+  max-width: 400px;
+}
+  .logo {
+    max-width: 230px; }
+  .sea{
+    background-color: #a9cffc;
+    height: 17vh;
+    position: relative;
+
+
+  }
+  .box-sea{
+    position: relative;
+    .ships{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      animation-name: move;
+      animation-duration: 18s;
+      @media screen and (max-width: $L){
+        max-width: 40%;
+      }
+
+    }
+    .lighthouse{
+      position: absolute;
+      bottom: -10px;
+      left:0;
+      @media screen and (max-width: $L){
+        max-width: 40%;
+      }
+
+    }
+  }
+  @keyframes move {
+    from {right: 60%;}
+    to {right: 0;}
+  }
+  @keyframes rotate {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+  }
+}

@@ -1,0 +1,124 @@
+//.login-page {
+//  background-color: #fafafa;
+//  background-size: cover;
+//  min-height: 100vh;
+//  position: relative;
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//
+//  .inside {
+//    position: relative;
+//    z-index: 1;
+//    text-align: center;
+//    width: 100%;
+//    @include media-max($L) {
+//      //margin: 0 10px;
+//    }
+//
+//    .title-text {
+//      @include font-source-sans(1.7rem, $colorMainDark, 600, 3rem);
+//      font-family: IRANSans;
+//    }
+//
+//    .min-width-input {
+//      min-width: 280px;
+//      @include media-max($L) {
+//        min-width: 100%;
+//
+//      }
+//    }
+//  }
+//
+//}
+//
+//.box-back {
+//  background-color: #fff;
+//  border-radius: 100px;
+//  display: inline-block;
+//  border: 0;
+//
+//  .icon-back {
+//
+//    background-color: #0db11d;
+//    border-radius: 50%;
+//    width: 30px;
+//    height: 30px;
+//    color: #fff;
+//    display: flex;
+//    align-items: center;
+//    justify-content: center;
+//  }
+//}
+//
+//.back-bodyModal {
+//  color: #484848;
+//  line-height: 2.5rem;
+//  font-weight: 600;
+//}
+//
+//.back-modal {
+//  position: relative;
+//  padding-right: 18px;
+//  color: #858484;
+//  font-weight: 500;
+//
+//  .icon-back {
+//    background-color: #0db11d;
+//    border-radius: 50%;
+//    width: 20px;
+//    height: 20px;
+//    color: #fff;
+//    display: flex;
+//    align-items: center;
+//    justify-content: center;
+//    font-size: .8rem;
+//    margin-bottom: 5px;
+//  }
+//
+//  &::before {
+//    content: "";
+//    width: 10px;
+//    height: 10px;
+//    background-color: $colorMain;
+//    border-radius: 50%;
+//    position: absolute;
+//    top: 14px;
+//    right: 0;
+//  }
+//}
+//
+//.image-right-card {
+//  border-radius: $borderRadius 0 0 $borderRadius;
+//  //height:100%;
+//  //width: auto;
+//  background-repeat: no-repeat;
+//  background-position:center;
+//  background-size:cover;
+//  min-height:70vh;
+//}
+//
+//.padding-custom-login {
+//  @media (min-width: 1200px) {
+//    padding-left: 120px !important;
+//    padding-right: 120px !important;
+//  }
+//}
+//
+//.border-radius-custom-login {
+//  border-radius: $borderRadius !important;
+//}
+//
+//.title-login {
+//  font-size: 1.3rem;
+//  font-family: Roboto_bold;
+//  margin: 1rem 0;
+//}
+//.caption-login{
+//  color: #b7b7b7;
+//  margin-bottom: 1.3rem;
+//  line-height: 1.7rem;
+//  .caption-inside-login{
+//  line-height: 1.7rem;
+//  }
+//}

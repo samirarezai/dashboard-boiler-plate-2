@@ -1,0 +1,236 @@
+.main-page {
+  display: flex;
+
+  .header {
+    width: calc(100% - 240px);
+    transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms, margin 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+    margin-left: 240px;
+    background-color: #fff;
+    color: #009788;
+    z-index: 1201;
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+    min-height: 64px;
+    box-shadow: -1px 2px 3px #e6e6e6a3;
+
+    .content-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+  }
+
+  .sidebar {
+    width: 240px;
+    transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+    flex-shrink: 0;
+    white-space: nowrap;
+    overflow: hidden;
+
+    .content-sidebar {
+      width: 240px;
+      transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+      border-right: 1px solid rgba(0, 0, 0, 0.12);
+      top: 0;
+      flex: 1 0 auto;
+      height: 100%;
+      display: flex;
+      outline: 0;
+      z-index: 1000;
+      position: fixed;
+      overflow-y: auto;
+      flex-direction: column;
+      background-color: $darkBlueColor;
+      left: 0;
+      right: auto;
+      overflow-x: hidden;
+      .header-sidebar {
+        height: 64px;
+        background-color: $blueColor;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .text-logo {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .main {
+    height: 100vh;
+    display: flex;
+    padding: 0;
+    flex-grow: 1;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .breadcrumb-main {
+      height: 35px;
+      padding: 8px 24px;
+      position: fixed;
+      background-color: #fff;
+      box-shadow: 1px 3px 3px #e6e6e6;
+      top: 64px;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .top-height {
+      color: #fff;
+      display: flex;
+      padding: 0px 8px;
+      align-items: center;
+      justify-content: flex-end;
+      min-height: 64px;
+      width: 100%;
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 20px 10px;
+      margin-top: 35px;
+      width: 100%;
+      .card-content{
+        padding: 20px;
+      }
+      @media screen and (max-width: $M) {
+        padding: 10px 0px;
+        .card-content{
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  //----------------------------------------------------sidebar
+  .collapsible, .collapsible-body, .collapsible-header {
+    background-color: $darkBlueColor;
+    color: #fff;
+    border-color: $darkBlueColor;
+
+    .open-icon {
+      transition: all .2s;
+    }
+
+    .active {
+      .open-icon {
+        transform: rotate(90deg);
+        transition: all .2s;
+      }
+    }
+
+    .sub-menu-collapse {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+  }
+
+}
+
+//------------------------------------------------------close
+.close-sidebar {
+  .header {
+    width: calc(100% - 75px);
+  }
+
+  .sidebar {
+    width: 75px;
+
+    .content-sidebar {
+      width: 75px;
+
+      .header-sidebar {
+        .text-logo {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .collapsible, .collapsible-body, .collapsible-header {
+    .text-collapse {
+      transition: all .5s;
+      opacity: 0 !important;
+    }
+  }
+
+}
+
+
+.pagination {
+  a {
+    font-size: .9rem !important;
+  }
+}
+
+.card-title-circle {
+  position: relative;
+  padding-left: 14px;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: $blueColor;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    left: 0;
+    top: 10px;
+  }
+}
+
+.card-title-simple {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+}
+
+.modal {
+  height: auto;
+}
+
+.tab-custom {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+
+  .tab {
+    a {
+      border-bottom: 2px solid transparent;
+      transition:all .3s ease-in;
+      padding: 0 15px;
+      font-size:.9rem;
+      @media screen and (max-width:$M){
+        padding: 0 8px;
+      }
+    }
+    a.active {
+      background-color:rgba(185, 201, 247, 0.2);;
+  border-bottom: 2px solid $blueColor;
+    }
+  }
+
+  .indicator {
+    display: none;
+  }
+}
+.dropdown-content{
+  width:auto !important;
+}
+

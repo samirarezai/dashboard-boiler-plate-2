@@ -1,0 +1,61 @@
+
+
+[type="checkbox"] + span:not(.lever) {
+  padding-left: 26px;
+}
+.btn-outline-primary-border{
+  text-decoration: none;
+  color: $greenColor;
+  background-color: #fff;
+  border:1.5px solid $greenColor;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: background-color .2s ease-out;
+  cursor: pointer;
+  &:hover,&:focus,&:active {
+    color: #fff !important;
+  }
+}
+.teal-hover{
+  &:hover{
+    transition: all .2s;
+    color: $greenColor !important;
+  }
+
+}
+.eye-class{
+  position: relative;
+z-index: 0;
+  .eye-open{
+    position: absolute;
+    right: 0;
+    top:13px;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .eye-close{
+    position: absolute;
+    right: 0;
+    top:13px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+.eye-class.eye-class-open{
+  .eye-open{
+    display: inline-block;
+  }
+  .eye-close{
+    display: none;
+  }
+}
+
+
+.select-wrapper input.select-dropdown{
+font-size:.9rem
+}
+.dropdown-content li > a, .dropdown-content li > span {
+  font-size:.9rem
+}

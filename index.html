@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Starter Template - Materialize</title>
+
+    <!-- CSS  -->
+    <!--  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <!--  <link href="assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+
+<div>
+    <div id="navbarButton" class="main-page ">
+        <div class="sidebar">
+            <div class="content-sidebar">
+                <div class="header-sidebar">
+
+                    <span class="bg-white border-radius-5 p-2">
+                     <img src="assets/img/app/logo.svg" alt="logo"/>
+                    </span>
+                    <span class="ps-2 text-logo">
+                        Paliz
+                    </span>
+                </div>
+                <div>
+                    <ul class="collapsible ps-3 ps-md-2">
+                        <li>
+                            <div class="collapsible-header"><a href="#">
+                                <img src="assets/img/icon/dashboard.svg" alt="dashboard" style="max-width:18px">
+                                <span class="text-collapse ps-2 pt-1">
+                                EngineLogBook
+                                </span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="sub-menu-collapse">
+                                    <span class="d-flex align-items-center justify-content-between">
+                                    <img src="assets/img/icon/setting.svg" alt="dashboard" style="max-width:18px">
+                                        <span class="text-collapse ps-2 pt-1">
+                                        Setting
+                                            </span>
+                                    </span>
+                                    <i class="material-icons open-icon">keyboard_arrow_right</i>
+                                </div>
+                            </div>
+                            <div class="collapsible-body p-0 pl-4">
+                                <ul>
+                                    <li>
+                                        <div class="collapsible-header"><a href="pages/stting.html"><i
+                                                class="material-icons">keyboard_arrow_right</i>
+                                            <span class="text-collapse">
+                                                First
+                                            </span>
+                                        </a></div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header"><a href="#"><i class="material-icons">keyboard_arrow_right</i>
+                                            <span class="text-collapse">
+                                            First
+                                            </span>
+                                        </a></div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="content-header">
+                <button onclick="handleMenu()" class="btn bg-transparent shadow-none ">
+                    <i class="material-icons text-primary fs-2">menu</i>
+                </button>
+                <div class="pe-3">
+                    <div class="d-flex align-items-center pe-2">
+                        <a class='dropdown-trigger btn bg-transparent shadow-none px-2' href='#'
+                           data-target='dropdown1'>
+
+                            <img src="assets/img/icon/profile.svg" alt="profile" style="max-width:35px">
+                        </a>
+                        <div class="font-size-07 text-start">
+                            <div class="text-dark font-family-bold" style="line-height:1rem">Samira Rezaei</div>
+                            <div class="text-secondary" style="line-height:1rem">Admin</div>
+                        </div>
+                    </div>
+
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><span>Samira Rezaei</span></li>
+                        <li><span>091912345678</span></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li><a href="#!">my account</a></li>
+                        <li><a href="#!">sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="top-height">
+                top-height
+            </div>
+            <div class="breadcrumb-main">
+                <div class="d-flex align-items-center">
+                    <a href="#" class="d-flex align-items-center">First
+                        <i class="material-icons text-primary font-size-13">keyboard_arrow_right</i>
+                    </a>
+                    <a href="#" class="d-flex align-items-center">Second</a>
+                </div>
+
+
+            </div>
+            <div class="content">
+                <div class="container-fluid">
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div>
+                                <a href="pages/report.html"
+                                   class="waves-effect waves-teal btn-flat btn-border-primary ">
+                                    <div class="d-flex align-items-center">
+                                        <i class="material-icons font-size-07">add</i>
+                                        Add reports
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="row  justify-content-end">
+                                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3">
+                                    <div class="input-field  ">
+                                        <select>
+                                            <option value="" disabled selected>Choose your option</option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                        </select>
+                                        <label>Sort By</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3">
+                                    <div class="input-field">
+                                        <input id="first_name" type="text" class="validate">
+                                        <label for="first_name">First Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3">
+                                    <div class="input-field">
+                                        <input id="datepicker2" type="text" class="datepicker"/>
+                                        <label for="datepicker2">birth date</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <table class="striped">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Item Name</th>
+                                    <th class="text-center">Detail</th>
+                                    <th class="text-center">Operation</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td>Alvin</td>
+                                    <td>Eclair</td>
+                                    <td class="text-center"><a href="#">more detail</a></td>
+                                    <td class="text-center">
+                                        <a href="#"><i class="material-icons font-size-13">edit</i></a>
+                                        <a href="#"><i class="material-icons font-size-13 text-danger">delete</i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Alan</td>
+                                    <td>Jellybean</td>
+                                    <td class="text-center"><a href="#">more detail</a></td>
+                                    <td class="text-center">
+                                        <a href="#"><i class="material-icons font-size-13">edit</i></a>
+                                        <a href="#"><i class="material-icons font-size-13 text-danger">delete</i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Jonathan</td>
+                                    <td>Lollipop</td>
+                                    <td class="text-center"><a href="#">more detail</a></td>
+                                    <td class="text-center">
+                                        <a href="#"><i class="material-icons font-size-13">edit</i></a>
+                                        <a href="#"><i class="material-icons font-size-13 text-danger">delete</i></a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+</div>
+
+<!--  Scripts-->
+<script src="assets/js/jquery.js"></script>
+<!--  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+<script src="assets/js/materialize.js"></script>
+<script src="assets/js/init.js"></script>
+
+</body>
+</html>
