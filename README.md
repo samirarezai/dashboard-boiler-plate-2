@@ -3,5 +3,5 @@ a simple dashboard with JavaScript and Materialize
 
 In the project directory, you can run:
 
-npm rn scss
+npm run scss
 
