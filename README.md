@@ -5,6 +5,6 @@ a simple dashboard with JavaScript and Materializecss
 
 In the project directory, you can run:
 
-npm run scss
+### `npm run scss`
 
 for more information visit https://materializecss.com/
